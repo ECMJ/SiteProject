@@ -21,14 +21,8 @@
                 <p class="lead">Fiz com WordPress</p>
             </div>
             <div class="col-md-4 col-sm-12">
-                <form>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="O que procura?">
-                        <div class="input-group-append">
-                            <button class="btn btn-my-color-6" type="button">Buscar</button>
-                        </div>
-                    </div>
-                </form>
+                <!-- Adiciona o formulário de buscas -->
+                <?php dynamic_sidebar('Busca'); ?>
             </div>
         </div>
         <div class="row">

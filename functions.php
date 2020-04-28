@@ -1,10 +1,15 @@
 <?php
 
-// Chamar a tag Title
-function bs4wp_title_tag() {
+// Chamar a tag title e adicionar os formatos de posts
+function bs4wp_theme_support() {
+
+    // Chamar a tag Title
     add_theme_support('title-tag');
+
+    // Adicionar os formatos de posts
+    add_theme_support('post-formats', array('aside', 'image'));
 }
-add_action('after_setup_theme', 'bs4wp_title_tag');
+add_action('after_setup_theme', 'bs4wp_theme_support');
 
 // Previnir o erro na tag Title, em versões anteriores
 if (!function_exists('_wp_render_title_tag')) {
@@ -51,6 +56,18 @@ register_sidebar(
         'after_widget' => '</div></div>',
         'before_title' => '<h5 class="card-header">',
         'after_title' => '</h5><div class="card-body">',
+
+));
+
+// Criar o campo de busca
+register_sidebar(
+    array(
+        'name' => 'Busca',
+        'id' => 'busca',
+        'before_widget' => '<div class="blog-search">',
+        'after_widget' => '</div>',
+        'before_title' => '<h5>',
+        'after_title' => '</h5>',
 
 ));
 
