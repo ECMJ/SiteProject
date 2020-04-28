@@ -1,3 +1,11 @@
+.size-auto,
+.size-full,
+.size-large,
+.size-madium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
