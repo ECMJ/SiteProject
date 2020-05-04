@@ -1,6 +1,6 @@
 <?php if( is_single() ) :  ?>
 
-        <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid rounded')); ?>
+    <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid rounded')); ?>
 
         <h3 class="mb-3 mt-4 pb-2 border-top"><?php the_title(); ?></h3>
 
@@ -10,7 +10,7 @@
 
         <hr>
 
-        <?php comments_template(); ?>
+    <?php comments_template(); ?>
 
 <?php else : ?>
 
